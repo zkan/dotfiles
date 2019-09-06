@@ -13,7 +13,7 @@ set number          " show current line number
 set ignorecase      " ignore case when searching
 set title           " set title in console title bar
 set ruler           " show the line and column number of the cursor position.
-set colorcolumn=80
+set colorcolumn=100
 set autoread        " Reload unchanged files automatically.
 "autocmd FileType php setlocal noeol binary fileformat=dos
 
