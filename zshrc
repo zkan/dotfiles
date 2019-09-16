@@ -99,4 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=$PATH:$HOME/bin
+
+# Google Cloud SDK
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
+
+# Golang
+export GOROOT=~/go1.13
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
