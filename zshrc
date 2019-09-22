@@ -98,6 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias
+alias pw="cd /Users/zkan/Projects/pronto-dashboard/"
+alias ls="exa -bhUmla"
+
+# Binary files
 export PATH=$PATH:$HOME/bin
 
 # Google Cloud SDK
