@@ -1,0 +1,17 @@
+[user]
+	name = zkan
+	email = kan@prontomarketing.com
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    st = status -sb
+    df = icdiff
+[color]
+    ui = true
+[color "status"]
+    added = green
+    changed = red bold
+    untracked = magenta bold
+[core]
+	excludesfile = /Users/zkan/.gitignore_global
+[oh-my-zsh]
+	hide-dirty = 1
