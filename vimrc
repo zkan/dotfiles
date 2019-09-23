@@ -56,4 +56,18 @@ inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
 
-"execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdcommenter'
+
+call plug#end()
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
