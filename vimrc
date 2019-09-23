@@ -60,6 +60,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -71,3 +72,6 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+" Open NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
