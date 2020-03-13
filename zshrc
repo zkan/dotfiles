@@ -101,14 +101,23 @@ source $ZSH/oh-my-zsh.sh
 # Alias
 alias pw="cd /Users/zkan/Projects/pronto-dashboard/"
 alias ls="exa -bhUmla"
+alias python="python3"
+alias lsalias="grep -in --color -e '^alias\s+*' ~/.zshrc | sed 's/alias //' | grep --color -e ':[a-z][a-z0-9]*'"
 
 # Binary files
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin:$HOME/anaconda3/bin
 
 # Google Cloud SDK
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 
 # Golang
-export GOROOT=~/go1.13
+export GOROOT=~/go1.14
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# Pyenv
+eval "$(pyenv init -)"
+
+# Poetry
+export PATH=$PATH:$HOME/.poetry/bin
+alias poetry_shell='. "$(dirname $(poetry run which python))/activate"'
