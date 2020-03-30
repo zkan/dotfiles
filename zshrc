@@ -121,3 +121,7 @@ eval "$(pyenv init -)"
 # Poetry
 export PATH=$PATH:$HOME/.poetry/bin
 alias poetry_shell='. "$(dirname $(poetry run which python))/activate"'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/zkan/.sdkman"
+[[ -s "/Users/zkan/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/zkan/.sdkman/bin/sdkman-init.sh"
