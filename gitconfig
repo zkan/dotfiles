@@ -13,8 +13,6 @@
     untracked = magenta bold
 [core]
     excludesfile = /Users/zkan/.gitignore_global
-[commit]
-    template = /Users/zkan/.stCommitMsg
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
