@@ -99,28 +99,34 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Alias
-alias pw="cd /Users/zkan/Projects/pronto-dashboard/"
 alias ls="exa -bhUmla"
-alias python="python3"
 alias lsalias="grep -in --color -e '^alias\s+*' ~/.zshrc | sed 's/alias //' | grep --color -e ':[a-z][a-z0-9]*'"
 
 # Binary files
-export PATH=$PATH:$HOME/bin:$HOME/anaconda3/bin
+export PATH=$PATH:$HOME/bin
+
+# Anaconda
+export PATH=$PATH:$HOME/opt/anaconda3/bin
 
 # Google Cloud SDK
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 
 # Golang
-export GOROOT=~/go1.14
+export GOROOT=~/go1.14.2
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
-# Pyenv
-eval "$(pyenv init -)"
 
 # Poetry
 export PATH=$PATH:$HOME/.poetry/bin
 alias poetry_shell='. "$(dirname $(poetry run which python))/activate"'
+
+# Pyenv
+eval "$(pyenv init -)"
+
+# Node Version Manager (NVM)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/zkan/.sdkman"
