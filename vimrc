@@ -63,6 +63,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
+Plug 'maksimr/vim-jsbeautify'
 
 call plug#end()
 
@@ -77,3 +78,6 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+
+" Beautify HTML with Ctrl+f
+map <c-f> :call HtmlBeautify()<cr>
