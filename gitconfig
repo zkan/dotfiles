@@ -13,6 +13,7 @@
     untracked = magenta bold
 [core]
     excludesfile = /Users/zkan/.gitignore_global
+    editor = vim
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
