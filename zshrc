@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias ls="exa -bhUmla"
+alias icd="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias lsalias="grep -in --color -e '^alias\s+*' ~/.zshrc | sed 's/alias //' | grep --color -e ':[a-z][a-z0-9]*'"
 
 # Binary files
