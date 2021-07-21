@@ -138,3 +138,6 @@ pyenv() {
   eval "$(command pyenv init --path)"
   pyenv "$@"
 }
+
+# z - Tracks most-used directories to make cd smarter
+source /opt/homebrew/etc/profile.d/z.sh
