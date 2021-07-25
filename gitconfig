@@ -21,3 +21,5 @@
     process = git-lfs filter-process
 [oh-my-zsh]
     hide-dirty = 1
+[pull]
+	rebase = false
