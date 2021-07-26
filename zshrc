@@ -141,3 +141,10 @@ pyenv() {
 
 # z - Tracks most-used directories to make cd smarter
 source /opt/homebrew/etc/profile.d/z.sh
+export PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
+
+# START: Added by Airflow Breeze autocomplete setup
+autoload compinit && compinit
+autoload bashcompinit && bashcompinit
+source ~/.bash_completion.d/breeze-complete
+# END: Added by Airflow Breeze autocomplete setup
