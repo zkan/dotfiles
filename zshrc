@@ -113,9 +113,10 @@ export PATH=$PATH:$HOME/opt/anaconda3/bin
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 
 # Golang
-export GOROOT=~/go1.14.2
-export GOPATH=~/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOROOT=$HOME/sdk/go1.14.2
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 # Poetry
 export PATH=$PATH:$HOME/.poetry/bin
